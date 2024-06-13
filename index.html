@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNES_BKL</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="" content="">
+    <meta name="" content="">
+</head>
+<body>
+    
+    <nav class="nav">
+        <ul>
+            <a href="./home.html" class="anav">Home</a>
+            <a href="./About.html" class="anav">About</a>
+            <a href="./Work.html" class="anav">Work</a>
+            <a href="./Resume.html" class="anav">Resume</a>
+            <a href="./Contact.html" class="anav">Contact</a>
+        </ul>
+    </nav>
+
+    
+    <main>
+       
+        <section id="about">
+            <h2>About Me</h2>
+            <i><p>Hello, I'm younes boukhal 23 years old. I'm a beginner developer and UI/UX designer.</p></i>
+        </section>
+
+        
+        <section id="work">
+            <h2>My Work</h2>
+            <ul>
+                <a href="work_project1.html" class="ula">Project 1</a>
+                <a href="work_project2.html" class="ula">Project 2</a>
+                <a href="work_project3.html" class="ula">Project 3</a>
+            </ul>
+        </section>
+
+        
+        <section id="resume">
+            <h2 class="resum">My Resume</h2>
+            
+            <form action="#resume" method="post">
+                <br>
+                <label for="resume_upload"><h1>Upload Resume:</h1></label>
+                <br>
+                <br>
+                <input type="file" id="resume_upload" name="resume_upload">
+                <br>
+                <br>
+                <input class="button" type="submit" value="Submit" onclick="showImage('contact_image'); return false;">
+            </form>
+        </section>
+
+        
+        <section id="contact">
+            <h2 class="contacte">Contact Me</h2>
+            
+            <form action="#contact" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <br>
+                <input class="submit2" type="submit" value="Submit" onclick="showImage('contact_image'); return false;">
+               
+                <img id="contact_image" src="./imageverfication.jpg" alt="Submitting..." style="display: none;">
+            </form>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <p>&copy; 2024 Younes BKL</p>
+    </footer>
+
+    <script>
+        function showImage(imageId) {
+            var image = document.getElementById(imageId);
+            if (image) {
+                image.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
